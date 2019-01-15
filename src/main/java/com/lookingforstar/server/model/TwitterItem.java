@@ -1,7 +1,5 @@
 package com.lookingforstar.server.model;
 
-
-
 public class TwitterItem {
 	private String content;
 	private String date;

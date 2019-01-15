@@ -1,4 +1,4 @@
-package yapp.devcamp.fallInIdol.service;
+package com.lookingforstar.server.service;
 
 import java.io.IOException;
 
@@ -40,10 +40,8 @@ public class GoogleTranslateService {
 		else if(language.equals("русский")) {
 				target = "ru";
 		}
-		 
 		
-		 
-		 if(target.equals("ko")) {
+		if(target.equals("ko")) {
 			 return text;
 		 }
 		 

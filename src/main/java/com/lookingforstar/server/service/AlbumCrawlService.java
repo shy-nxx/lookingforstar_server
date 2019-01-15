@@ -1,4 +1,4 @@
-package yapp.devcamp.fallInIdol.service;
+package com.lookingforstar.server.service;
 
 import java.io.IOException;
 import java.lang.reflect.Method;
@@ -6,15 +6,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 
+import com.lookingforstar.server.model.AlbumItem;
 import org.jsoup.Connection;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 import org.springframework.stereotype.Service;
-
-import yapp.devcamp.fallInIdol.model.AlbumItem;
-import yapp.devcamp.fallInIdol.model.TwitterItem;
 
 
 @Service

@@ -1,4 +1,4 @@
-package yapp.devcamp.fallInIdol.service;
+package com.lookingforstar.server.service;
 
 import java.util.Random;
 

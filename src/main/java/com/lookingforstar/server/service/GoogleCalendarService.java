@@ -1,4 +1,4 @@
-package yapp.devcamp.fallInIdol.service;
+package com.lookingforstar.server.service;
 
  
 import java.io.IOException;
@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import com.lookingforstar.server.model.CalendarItem;
 import org.springframework.stereotype.Service;
 
 import com.google.api.client.auth.oauth2.Credential;
@@ -28,8 +29,6 @@ import com.google.api.services.calendar.model.CalendarList;
 import com.google.api.services.calendar.model.CalendarListEntry;
 import com.google.api.services.calendar.model.Event;
 
-import yapp.devcamp.fallInIdol.model.CalendarItem;
-import yapp.devcamp.fallInIdol.model.TwitterItem;
 
 
 @Service
@@ -120,7 +119,6 @@ public class GoogleCalendarService {
                 }
             }
             return CalendarList;
-		
     }
     
     public static Calendar getCalendarService() throws IOException {
