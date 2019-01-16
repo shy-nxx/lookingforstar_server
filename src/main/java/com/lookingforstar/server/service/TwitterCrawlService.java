@@ -40,7 +40,6 @@ public class TwitterCrawlService {
 		List<TwitterItem> TwitList = new ArrayList<TwitterItem>();
 		TwitterItem item;
 		
-		
 		try{
 			Connection con = Jsoup.connect(url);
 			Document doc = con.get();
@@ -64,9 +63,9 @@ public class TwitterCrawlService {
 						if (content.contains("pic")) {
 							if (!image.equals("")) {
 								r_content = content.substring(0, content.indexOf("pic"));
-								r_content = googleTranslateService.trnaslate(r_content, language);
-								date = googleTranslateService.trnaslate(date, language);
-								item = new TwitterItem(r_content, date, image);
+//								r_content = googleTranslateService.trnaslate(r_content, language);
+//								date = googleTranslateService.trnaslate(date, language);
+								item = new TwitterItem(r_content, image);
 								TwitList.add(item);
 							}
 						}

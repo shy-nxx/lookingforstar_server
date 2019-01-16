@@ -5,9 +5,8 @@ public class TwitterItem {
 	private String date;
 	private String image;
 	
-	public TwitterItem(String content,String date,String image) {
+	public TwitterItem(String content,String image) {
 		this.content=content;
-		this.date=date;
 		this.image=image;
 	}
 	public String getContent() {

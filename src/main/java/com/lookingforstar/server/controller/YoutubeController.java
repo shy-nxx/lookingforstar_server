@@ -36,7 +36,7 @@ public class YoutubeController {
 
         ModelAndView mv = new ModelAndView();
 
-        choice = "레드벨벳";
+        choice = "redvelvet";
 
         List<YouTubeItem> youtuberesult;
         int max = Integer.parseInt(items);
