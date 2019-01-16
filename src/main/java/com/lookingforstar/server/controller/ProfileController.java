@@ -40,8 +40,6 @@ public class ProfileController {
 
         mv.addObject("choice", choice);
 
-
-
         return mv;
     }
 

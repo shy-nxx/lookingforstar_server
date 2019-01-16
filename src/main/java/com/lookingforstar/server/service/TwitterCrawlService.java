@@ -1,10 +1,8 @@
 package com.lookingforstar.server.service;
 
 import java.io.IOException;
-import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.StringTokenizer;
 
 import com.lookingforstar.server.model.TwitterItem;
 import org.jsoup.Connection;
@@ -12,17 +10,13 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 
 
 @Service
 public class TwitterCrawlService {
-	
 
-	@Autowired
-	GoogleTranslateService googleTranslateService;
 	
 	public List<TwitterItem> TwitterCrawling(String choice, String language) throws IOException {
 		String url = "";
@@ -63,8 +57,6 @@ public class TwitterCrawlService {
 						if (content.contains("pic")) {
 							if (!image.equals("")) {
 								r_content = content.substring(0, content.indexOf("pic"));
-//								r_content = googleTranslateService.trnaslate(r_content, language);
-//								date = googleTranslateService.trnaslate(date, language);
 								item = new TwitterItem(r_content, image);
 								TwitList.add(item);
 							}

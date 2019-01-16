@@ -24,7 +24,6 @@ public class YoutubeController {
 
     private static final Logger logger = LoggerFactory.getLogger(YoutubeController.class);
 
-
     @RequestMapping("/youtube")
     public ModelAndView youtubeResponse(HttpServletRequest request, HttpServletResponse response,
                                         @ModelAttribute("choice") String choice,
@@ -51,8 +50,6 @@ public class YoutubeController {
             mv.addObject("youtube", youtuberesult);
             mv.setViewName("/youtube");
         }
-
-
 
         mv.addObject("choice", choice);
         mv.addObject("select", select);
