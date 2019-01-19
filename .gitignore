@@ -162,3 +162,4 @@ application.properties
 /target
 
 client_secret.json
+application.properties
